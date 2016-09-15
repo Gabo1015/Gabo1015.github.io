@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include top.html %}
+<body>
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+<!-- PAGE -->
+<div id="page">
+
+  <!-- CONTAINER -->
+  <div class="container page_block">
+
+    <!-- WRAPPER -->
+    <div class="wrapper">
+
+    {% include header.html %}
+
+    {{ content }}
+
+    {% include bottom.html %}
+
+    </div><!-- WRAPPER -->
+  </div><!-- //CONTAINER -->
+</div><!-- //PAGE -->
+</body>
+</html>

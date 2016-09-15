@@ -1,0 +1,27 @@
+exclude: [old]
+timezone: America/Bogota
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "index"
+  -
+    scope:
+      path: "obras"
+      type: "pages"
+    values:
+      layout: "page" # overrides previous default layout
+      sectionName: "Obras"
+  -
+    scope:
+      path: "obras"
+      type: "posts"
+    values:
+      layout: "post"
+      sectionName: "Obras"
+      sitePath:
+        - displayName: Inicio
+          webLink: /
+        - displayName: Obras
+          webLink: /obras
